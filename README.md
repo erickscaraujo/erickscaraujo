@@ -113,10 +113,10 @@
 ### &#x1F91D; Como Contribuir
 
 <p align="center">
-  <a href="https://www.buymeacoffee.com/erickscaraujo" target="_blank">
+  <a href="https://www.buymeacoffee.com/freeware" target="_blank">
     <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee" />
   </a>
-  <a href="https://github.com/erickscaraujo" target="_blank">
+  <a href="https://github.com/erickscaraujo/" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
 </p>
@@ -126,7 +126,7 @@
 ### &#x1F310; Conecte-se Comigo
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/seuusuario" target="_blank">
+  <a href="https://www.linkedin.com/in/e-araujo/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="https://erickscaraujo.github.io/erickscaraujo/" target="_blank">
