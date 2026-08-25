@@ -129,7 +129,7 @@
   <a href="https://www.linkedin.com/in/seuusuario" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://seusite.com" target="_blank">
+  <a href="https://erickscaraujo.github.io/erickscaraujo/" target="_blank">
     <img src="https://img.shields.io/badge/Portf%C3%B3lio-000000?style=for-the-badge&logo=About.me&logoColor=white" alt="Portf&#xF3;lio" />
   </a>
 </p>
