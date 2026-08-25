@@ -24,7 +24,7 @@
       &#x1F4AC; Pergunte-me sobre <b>Python, SQL, Power BI, Machine Learning</b><br>
     </td>
     <td width="30%" align="center">
-      <img src="https://github-readme-stats.vercel.app/api?username=erickscaraujo&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff" width="100%" />
+      <img src="https://gh-stats-api.vercel.app/api?username=erickscaraujo&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff" width="100%" />
     </td>
   </tr>
 </table>
@@ -103,9 +103,9 @@
 ### &#x1F4C8; Minhas Estat&#xED;sticas
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=erickscaraujo&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff&include_all_commits=true&count_private=true" alt="GitHub Stats" />
+  <img src="https://gh-stats-api.vercel.app/api?username=erickscaraujo&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff&include_all_commits=true&count_private=true" alt="GitHub Stats" />
   <br><br>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=erickscaraujo&theme=radical&hide_border=true&background=0d1117&stroke=58a6ff&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=c9d1d9&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=8b949e" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com?user=erickscaraujo&theme=radical&hide_border=true&background=0d1117&stroke=58a6ff&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=c9d1d9&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=8b949e" alt="GitHub Streak" />
 </p>
 
 ---
