@@ -21,7 +21,6 @@
       sempre buscando entregar solu&#xE7;&#xF5;es que geram valor real para o neg&#xF3;cio.<br><br>
       &#x1F52D; Atualmente estudando <b>Engenharia de Dados</b> e <b>MLOps</b><br>
       &#x1F331; Explorando o ecossistema de dados em nuvem e automa&#xE7;&#xE3;o de pipelines<br>
-      &#x1F4AC; Pergunte-me sobre <b>Python, SQL, Power BI, Machine Learning</b><br>
     </td>
     <td width="30%" align="center">
       <img src="https://gh-stats-api.vercel.app/api?username=erickscaraujo&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff" width="100%" />
