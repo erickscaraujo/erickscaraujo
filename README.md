@@ -21,7 +21,6 @@
       sempre buscando entregar solu&#xE7;&#xF5;es que geram valor real para o neg&#xF3;cio.<br><br>
       &#x1F52D; Atualmente estudando <b>Engenharia de Dados</b> e <b>MLOps</b><br>
       &#x1F331; Explorando o ecossistema de dados em nuvem e automa&#xE7;&#xE3;o de pipelines<br>
-      &#x1F4AC; Pergunte-me sobre <b>Python, SQL, Power BI, Machine Learning</b><br>
     </td>
     <td width="30%" align="center">
       <img src="https://gh-stats-api.vercel.app/api?username=erickscaraujo&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff" width="100%" />
@@ -52,9 +51,14 @@
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-FF6600?style=for-the-badge&logo=xgboost&logoColor=white)
+![LightGBM](https://img.shields.io/badge/LightGBM-9ACD32?style=for-the-badge&logo=lightgbm&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 
 #### &#x2699;&#xFE0F; Engenharia de Dados
+![Polars](https://img.shields.io/badge/🐻‍❄️-Polars-blue?style=for-the-badge)
 ![Apache Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
 ![Apache Airflow](https://img.shields.io/badge/Apache%20Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white)
 ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)
@@ -113,10 +117,10 @@
 ### &#x1F91D; Como Contribuir
 
 <p align="center">
-  <a href="https://www.buymeacoffee.com/erickscaraujo" target="_blank">
+  <a href="https://www.buymeacoffee.com/freeware" target="_blank">
     <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee" />
   </a>
-  <a href="https://github.com/erickscaraujo" target="_blank">
+  <a href="https://github.com/erickscaraujo/" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
 </p>
@@ -126,10 +130,10 @@
 ### &#x1F310; Conecte-se Comigo
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/seuusuario" target="_blank">
+  <a href="https://www.linkedin.com/in/e-araujo/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://seusite.com" target="_blank">
+  <a href="https://erickscaraujo.github.io/erickscaraujo/" target="_blank">
     <img src="https://img.shields.io/badge/Portf%C3%B3lio-000000?style=for-the-badge&logo=About.me&logoColor=white" alt="Portf&#xF3;lio" />
   </a>
 </p>
