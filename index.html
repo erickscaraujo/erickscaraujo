@@ -183,6 +183,11 @@ footer a:hover{color:var(--ink)}
 @media print{.topbar,.hero__actions,.profile__links,.rule{display:none}body{background:white}.paper,.section{box-shadow:none;border-color:#E5E7EB}}
 .reveal{opacity:0;transform:translateY(8px);transition:opacity .45s ease, transform .45s ease}
 .reveal.visible{opacity:1;transform:none}
+.tsforge-embed{margin-top:12px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:white}
+.tsforge-embed iframe{width:100%;height:520px;border:0;display:block;background:white}
+@media(max-width:760px){.tsforge-embed iframe{height:420px}}
+.tsforge-embed__fallback{padding:10px 14px;font-size:0.82rem;color:var(--muted);border-top:1px solid var(--line);background:#F9FAF7}
+.tsforge-embed__fallback a{color:var(--accent);font-weight:600}
 </style>
 </head>
 <body>
@@ -364,7 +369,7 @@ footer a:hover{color:var(--ink)}
     <div class="section__aside">
       <div class="eyebrow">05 — Software & Portfólio</div>
       <h2>Apps freeware para a comunidade</h2>
-      <p>19 repositórios no GitHub: suítes de ferramentas, laboratórios de dados & IA, utilitários e jogos educativos — muitos 100% offline.</p>
+      <p>19 repositórios no GitHub + pacote R <b>tsforge</b>: suítes de ferramentas, laboratórios de dados & IA, utilitários, jogos educativos e forecasting em R — muitos 100% offline.</p>
       <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap"><a class="btn btn--ghost" href="https://github.com/erickscaraujo" target="_blank" rel="noopener">github.com/erickscaraujo ↗</a></div>
     </div>
     <div style="display:grid;gap:18px">
@@ -372,6 +377,22 @@ footer a:hover{color:var(--ink)}
       <div class="card card--muted">
         <p class="bullet"><b>Por dentro do laboratório.</b> Por trás de cada um desses aplicativos, o backend é praticamente um <b>museu de linguagens</b> — Python, Lua, Java, C++, C… e outros tantos “fósseis digitais” que fui acumulando ao longo da minha jornada na área de dados.</p>
         <p class="bullet" style="margin-top:10px">Reúni esse arsenal de scripts antigos e transformei em um <b>front-end temperado com inteligência artificial</b> — e, claro, uma boa dose de paciência (porque a IA adora testar nossa calma). O resultado são apps feitos com carinho, pensados para rodar <b>100% local</b> quando possível e disponibilizados à comunidade em <b>formato freeware</b>. Afinal, compartilhar é sempre melhor do que deixar código pegando poeira na gaveta.</p>
+      </div>
+
+      <div>
+        <div class="sw-cat">Pacotes R • Forecasting</div>
+        <div class="sw-grid">
+          <article class="sw-card sw-card--featured">
+            <div class="sw-card__head"><span class="sw-card__title"><span class="ic">R</span>tsforge — forecasting automático em R</span><span class="chip">Pacote R • Quarto</span></div>
+            <p class="sw-card__desc">Pacote R de <b>forecasting automático baseado em evidência</b>: valida, diagnostica, roda backtest rolling-origin em um registro de modelos, seleciona o vencedor empírico para a série e o horizonte, projeta com intervalos e gera dashboard. Sem “melhor método universal”. Site completo publicado neste mesmo GitHub Pages — leia sem sair da página.</p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px"><span class="mini">29 modelos • 63 funções • R CMD check limpo</span><span class="mini">auto_ts() • register_model()</span></div>
+            <div class="tsforge-embed">
+              <iframe src="./tsforge/" title="Documentação do pacote R tsforge" loading="lazy"></iframe>
+              <div class="tsforge-embed__fallback">Não carregou? <a href="./tsforge/" target="_blank" rel="noopener">Abrir o site do tsforge em nova aba ↗</a> • <a href="https://github.com/erickscaraujo/tsforge" target="_blank" rel="noopener">Código no GitHub ↗</a> • <a href="./tsforge/getting-started.html" target="_blank" rel="noopener">Getting started ↗</a></div>
+            </div>
+            <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;align-items:center"><a class="btn btn--dark" href="./tsforge/" target="_blank" rel="noopener">Ler site do tsforge ↗</a><a class="btn btn--ghost" href="https://github.com/erickscaraujo/tsforge" target="_blank" rel="noopener">Código ↗</a><a class="btn btn--ghost" href="./tsforge/api.html" target="_blank" rel="noopener">API</a><a class="btn btn--ghost" href="./tsforge/examples.html" target="_blank" rel="noopener">Exemplos</a></div>
+          </article>
+        </div>
       </div>
 
       <div>

@@ -1,0 +1,177 @@
+[
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "All methods cite the original work or the software manual. No invented references — every entry below is verifiable.\n\n\nAssimakopoulos, Vassilios, and Konstantinos Nikolopoulos. 2000. “The Theta Model: A Decomposition Approach to Forecasting.” International Journal of Forecasting.\n\n\nBollerslev, Tim. 1986. “Generalized Autoregressive Conditional Heteroskedasticity.” Journal of Econometrics.\n\n\nBox, George E. P., and David R. Cox. 1964. “An Analysis of Transformations.” Journal of the Royal Statistical Society: Series B.\n\n\nBox, George E. P., and Gwilym M. Jenkins. 1976. Time Series Analysis: Forecasting and Control. Holden-Day.\n\n\nChen, Tianqi, and Carlos Guestrin. 2016. “XGBoost: A Scalable Tree Boosting System.” In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining.\n\n\nCleveland, Robert B., William S. Cleveland, Jean E. McRae, and Irma Terpenning. 1990. “STL: A Seasonal-Trend Decomposition Procedure Based on Loess.” Journal of Official Statistics.\n\n\nCortes, Corinna, and Vladimir Vapnik. 1995. “Support-Vector Networks.” Machine Learning.\n\n\nCroston, John D. 1972. “Forecasting and Stock Control for Intermittent Demands.” Operational Research Quarterly.\n\n\nEngle, Robert F. 1982. “Autoregressive Conditional Heteroskedasticity with Estimates of the Variance of United Kingdom Inflation.” Econometrica.\n\n\nFriedman, Jerome, Trevor Hastie, and Robert Tibshirani. 2010. “Regularization Paths for Generalized Linear Models via Coordinate Descent.” Journal of Statistical Software.\n\n\nGhalanos, Alexios. 2024. Rugarch: Univariate GARCH Models. https://cran.r-project.org/package=rugarch.\n\n\nHyndman, Rob J., and George Athanasopoulos. 2021. Forecasting: Principles and Practice. 3rd ed. OTexts. https://otexts.com/fpp3/.\n\n\nHyndman, Rob J., George Athanasopoulos, Christoph Bergmeir, Gabriel Caceres, Leanne Chhay, Mitchell O’Hara-Wild, Fotios Petropoulos, Slava Razbash, Earo Wang, and Farah Yasmeen. 2025. Forecast: Forecasting Functions for Time Series and Linear Models. https://cran.r-project.org/package=forecast.\n\n\nHyndman, Rob J., and Ye Khandakar. 2008. “Automatic Time Series Forecasting: The Forecast Package for r.” Journal of Statistical Software.\n\n\nHyndman, Rob J., Anne B. Koehler, J. Keith Ord, Ralph D. Snyder, and Glen R. Grose. 2008. Forecasting with Exponential Smoothing: The State Space Approach. Springer.\n\n\nKillick, Rebecca, and Idris A. Eckley. 2014. “Changepoint: An r Package for Changepoint Analysis.” Journal of Statistical Software.\n\n\nLivera, Alysha M. De, Rob J. Hyndman, and Ralph D. Snyder. 2011. “Forecasting Time Series with Complex Seasonal Patterns Using Exponential Smoothing.” Journal of the American Statistical Association.\n\n\nNikolopoulos, Konstantinos, Aris A. Syntetos, John E. Boylan, Fotios Petropoulos, and Vassilios Assimakopoulos. 2011. “An Aggregate-Disaggregate Intermittent Demand Approach (ADIDA) to Forecasting: An Intermittent Demand Approach.” International Journal of Production Economics.\n\n\nPfaff, Bernhard. 2024. Vars: VAR Modelling. https://cran.r-project.org/package=vars.\n\n\nSims, Christopher A. 1980. “Macroeconomics and Reality.” Econometrica.\n\n\nSyntetos, Aris A., and John E. Boylan. 2005. “The Accuracy of Intermittent Demand Estimates.” International Journal of Forecasting.\n\n\nTaylor, Sean J., and Benjamin Letham. 2023. Prophet: Automatic Forecasting Procedure. https://cran.r-project.org/package=prophet.\n\n\nTeunter, Ruud H., Aris A. Syntetos, and M. Zied Babai. 2011. “Intermittent Demand: Linking Forecasting to Inventory Obsolescence.” International Journal of Production Economics.\n\n\nTrapletti, Adrian, and Kurt Hornik. 2024. Tseries: Time Series Analysis and Computational Finance. https://cran.r-project.org/package=tseries.\n\n\nVenables, William N., and Brian D. Ripley. 2002. Modern Applied Statistics with s. 4th ed. Springer.\n\n\nWright, Marvin N., and Andreas Ziegler. 2017. “Ranger: A Fast Implementation of Random Forests for High Dimensional Data in c++ and r.” Journal of Statistical Software."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "tsforge — automatic, evidence-based forecasting for R",
+    "section": "",
+    "text": "Give it a series. It validates, diagnoses, backtests a registry of models with rolling-origin validation, selects the empirical winner for this series and horizon under the configured validation procedure, forecasts with intervals, explains, and builds a Markdown/Quarto dashboard with interactive charts.\nThere is no universal best method — and this package will never claim one."
+  },
+  {
+    "objectID": "index.html#why-tsforge",
+    "href": "index.html#why-tsforge",
+    "title": "tsforge — automatic, evidence-based forecasting for R",
+    "section": "Why tsforge",
+    "text": "Why tsforge\n\nEvidence, not preference. The winner is the backtest winner. Ties, failures and unavailable models stay visible for audit.\nHonest metrics. 13 error metrics plus interval coverage; MAPE is NA whenever actuals contain zeros — never silently computed.\nExtensible. register_model() adds your method without touching core.\nLight base. Core runs on base R; ETS, GARCH, VAR, Prophet, ML and plotly are optional and capability-probed."
+  },
+  {
+    "objectID": "index.html#status",
+    "href": "index.html#status",
+    "title": "tsforge — automatic, evidence-based forecasting for R",
+    "section": "Status",
+    "text": "Status\nVersion 1.1.1: 29 registry models (+2 runtime ensembles), 63 exported functions, 15 runnable examples; quantiles, MinT, xreg, monitoring, streaming, Shiny, PMML, tidy; interactive dashboards; R CMD check clean. Quarto website (this site)."
+  },
+  {
+    "objectID": "examples.html",
+    "href": "examples.html",
+    "title": "Examples",
+    "section": "",
+    "text": "Runnable scripts live in examples/ (run from that folder). Each prints its progress and writes dashboards/CSVs to examples/output/.\n\n\n\n\n\n\n\n\nScript\nData\nShows\n\n\n\n\nex01_airpassengers.R\nAirPassengers\nfull pipeline + dashboard + exports\n\n\nex02_nile_break.R\nNile\nchange-points, transforms, sliding backtest\n\n\nex03_co2_sliding.R\nco2\nsliding validation, interval coverage\n\n\nex04_quarterly.R\nUKgas, JohnsonJohnson\nquarterly frequency, top-3 refits\n\n\nex05_custom_model.R\nsunspot.month\nregister_model() plug-in\n\n\nex06_api_sweep.R\nsynthetic\nevery public function, edge cases\n\n\nex07_v020.R\nAirPassengers\nETS/auto.arima, residuals, Box-Cox, reconcile\n\n\nex08_interactive.R\nAirPassengers\nplotly widgets + static fallback\n\n\nex09_advanced.R\nmixed\nTBATS/Prophet, GARCH gate, VAR + Granger\n\n\nex10_ml.R\nAirPassengers\nML shoot-out on temporal features\n\n\nex11_neural.R\nco2\nMLP vs baselines, capability table\n\n\nex12_v110.R\nsynthetic\nxreg, conformal, MinT, monitor, online, parallel, Shiny, PMML, LLM, tidy\n\n\nex13_core_tour.R\nlh, nottem\ncore tour: diagnostics, registry, backtest, exports\n\n\nex14_intervention.R\nUKDriverDeaths\nseat-belt xreg, holdout monitoring, quantiles, widgets\n\n\nex15_production.R\nLakeHuron, discoveries, DAX, Canada\nMinT, streaming, PMML, LLM guard, tidy, VAR\n\n\n\ncd examples\nRscript ex01_airpassengers.R"
+  },
+  {
+    "objectID": "api.html",
+    "href": "api.html",
+    "title": "API reference",
+    "section": "",
+    "text": "Generated from roxygen2 documentation (R CMD check enforces full coverage)."
+  },
+  {
+    "objectID": "api.html#pipeline",
+    "href": "api.html#pipeline",
+    "title": "API reference",
+    "section": "Pipeline",
+    "text": "Pipeline\n\nauto_ts() / auto_forecast() — full pipeline\nanalyze_ts() / diagnose_ts() — exploratory diagnostics\nbacktest(), compare_models(), select_model(), forecast_ts()\nexplain_forecast(), ts_dashboard(), export_*()"
+  },
+  {
+    "objectID": "api.html#diagnostics-and-features",
+    "href": "api.html#diagnostics-and-features",
+    "title": "API reference",
+    "section": "Diagnostics and features",
+    "text": "Diagnostics and features\n\ndetect_frequency(), detect_seasonality(), detect_outliers(), treat_outliers(), detect_change_points(), decompose_ts(), diagnose_residuals(), transform_ts(), make_ts_features()"
+  },
+  {
+    "objectID": "api.html#registry-and-catalog",
+    "href": "api.html#registry-and-catalog",
+    "title": "API reference",
+    "section": "Registry and catalog",
+    "text": "Registry and catalog\n\nregister_model(), list_models(), describe_model(), available_models(), model_catalog(), compare_model_families(), model_status(), dl_capabilities()"
+  },
+  {
+    "objectID": "api.html#standalone-modules",
+    "href": "api.html#standalone-modules",
+    "title": "API reference",
+    "section": "Standalone modules",
+    "text": "Standalone modules\n\nanalyze_volatility(), var_forecast(), granger_causality(), reconcile(), run_benchmark()"
+  },
+  {
+    "objectID": "api.html#v1.1.0-capabilities",
+    "href": "api.html#v1.1.0-capabilities",
+    "title": "API reference",
+    "section": "v1.1.0 capabilities",
+    "text": "v1.1.0 capabilities\n\npinball_loss(), quantile_intervals(), conformal_intervals(), predict_quantiles()\nmonitor_forecast(), online_init(), online_update()\nts_shiny(), export_pmml(), export_scorer(), onnx_available()\nbuild_narrative_prompt(), llm_narrate()\nfortify_forecast(), as_tsibble(), autoplot()"
+  },
+  {
+    "objectID": "api.html#interactive-charts",
+    "href": "api.html#interactive-charts",
+    "title": "API reference",
+    "section": "Interactive charts",
+    "text": "Interactive charts\n\nhas_plotly(), plotly_history(), plotly_forecast(), plotly_decomposition(), plotly_ranking(), plotly_residuals(), save_widget()"
+  },
+  {
+    "objectID": "changelog.html",
+    "href": "changelog.html",
+    "title": "Changelog",
+    "section": "",
+    "text": "See NEWS.md in the package root for the full history (CHANGELOG.md has the Portuguese summary). Headline releases:\n\n1.1.1 — ARIMA call$xreg fix; ex13-ex15 cover all 63 functions.\n1.1.0 — ten capabilities: quantiles/conformal, MinT, xreg, monitor, online streaming, parallel backtests, Shiny, PMML/scorer, LLM narrative, tidy.\n1.0.0 — release: Quarto website, verified references, real benchmarks, 31/33 models, interactive dashboards, clean R CMD check.\n0.6.0 — MLP (nnet) + deep-learning capability probes.\n0.5.0 — temporal features + 8 ML adapters.\n0.4.0 — TBATS/BATS/TSB/ADIDA/Prophet + GARCH/VAR standalone modules.\n0.3.0 — interactive plotly dashboards.\n0.2.0 — residuals, Box-Cox, PELT, reconcile, strict MAPE.\n0.1.0 — core pipeline, registry, backtest, dashboard."
+  },
+  {
+    "objectID": "getting-started.html",
+    "href": "getting-started.html",
+    "title": "Getting started",
+    "section": "",
+    "text": "# from a local checkout / tarball\ninstall.packages(\"tsforge_1.0.0.tar.gz\", repos = NULL, type = \"source\")\nOptional capabilities unlock more models (each probed at runtime):\ninstall.packages(c(\"forecast\", \"prophet\", \"rugarch\", \"vars\"))\ninstall.packages(c(\"ranger\", \"e1071\", \"glmnet\", \"xgboost\", \"plotly\"))"
+  },
+  {
+    "objectID": "getting-started.html#install",
+    "href": "getting-started.html#install",
+    "title": "Getting started",
+    "section": "",
+    "text": "# from a local checkout / tarball\ninstall.packages(\"tsforge_1.0.0.tar.gz\", repos = NULL, type = \"source\")\nOptional capabilities unlock more models (each probed at runtime):\ninstall.packages(c(\"forecast\", \"prophet\", \"rugarch\", \"vars\"))\ninstall.packages(c(\"ranger\", \"e1071\", \"glmnet\", \"xgboost\", \"plotly\"))"
+  },
+  {
+    "objectID": "getting-started.html#first-forecast",
+    "href": "getting-started.html#first-forecast",
+    "title": "Getting started",
+    "section": "First forecast",
+    "text": "First forecast\nlibrary(tsforge)\ndf &lt;- data.frame(\n  date  = seq(as.Date(\"2021-01-01\"), by = \"month\", length.out = 48),\n  value = AirPassengers[1:48])\n\nres &lt;- auto_ts(df, \"date\", \"value\", horizon = 12, seed = 1)\nsummary(res)          # ranking, fit stats, residual diagnostics\nplot(res)             # history + forecast + intervals\nexplain_forecast(res) # why this model, in plain language\ndb &lt;- ts_dashboard(res, interactive = TRUE)\ndb                    # dashboard.qmd/.md/index.html + plotly widgets"
+  },
+  {
+    "objectID": "getting-started.html#modes-and-metrics",
+    "href": "getting-started.html#modes-and-metrics",
+    "title": "Getting started",
+    "section": "Modes and metrics",
+    "text": "Modes and metrics\nauto_ts(df, \"date\", \"value\", horizon = 12,\n        mode = \"fast\",        # fast | balanced | full\n        metric = \"MAE\",       # any of 13 metrics\n        validation = \"sliding\")"
+  },
+  {
+    "objectID": "getting-started.html#custom-models",
+    "href": "getting-started.html#custom-models",
+    "title": "Getting started",
+    "section": "Custom models",
+    "text": "Custom models\nregister_model(\n  id = \"my_model\", name = \"My model\", family = \"machine_learning\",\n  fit = function(y, h, m, ...) list(last = tail(y, 1)),\n  predict = function(fit, h, ...) rep(fit$last, h))\nSee MODEL_REGISTRY_SPEC.md for the full contract."
+  },
+  {
+    "objectID": "methods.html",
+    "href": "methods.html",
+    "title": "Method catalog",
+    "section": "",
+    "text": "One row per catalogued method. status == \"implemented\" runs in this release; the rest are schema-ready roadmap entries. Query it live with model_catalog() and available_models()."
+  },
+  {
+    "objectID": "methods.html#baselines-and-smoothing",
+    "href": "methods.html#baselines-and-smoothing",
+    "title": "Method catalog",
+    "section": "Baselines and smoothing",
+    "text": "Baselines and smoothing\nnaive, snaive, drift, mean, median, ses, holt, hw (base R), ETS and auto.arima (optional forecast package)."
+  },
+  {
+    "objectID": "methods.html#arima-and-seasonal",
+    "href": "methods.html#arima-and-seasonal",
+    "title": "Method catalog",
+    "section": "ARIMA and seasonal",
+    "text": "ARIMA and seasonal\nARIMA grid with AICc (stats), auto.arima, TBATS/BATS (forecast), Theta, trend-seasonal regression."
+  },
+  {
+    "objectID": "methods.html#intermittent-demand",
+    "href": "methods.html#intermittent-demand",
+    "title": "Method catalog",
+    "section": "Intermittent demand",
+    "text": "Intermittent demand\nCroston Croston (1972), SBA Syntetos and Boylan (2005), TSB Teunter, Syntetos, and Babai (2011), ADIDA Nikolopoulos et al. (2011) — all in base R, compared head-to-head."
+  },
+  {
+    "objectID": "methods.html#volatility-and-multivariate-standalone-modules",
+    "href": "methods.html#volatility-and-multivariate-standalone-modules",
+    "title": "Method catalog",
+    "section": "Volatility and multivariate (standalone modules)",
+    "text": "Volatility and multivariate (standalone modules)\nsGARCH via analyze_volatility() (fitted only with ARCH evidence; Engle (1982), Bollerslev (1986)) and VAR via var_forecast() with granger_causality() (Sims (1980))."
+  },
+  {
+    "objectID": "methods.html#machine-learning-and-neural",
+    "href": "methods.html#machine-learning-and-neural",
+    "title": "Method catalog",
+    "section": "Machine learning and neural",
+    "text": "Machine learning and neural\nTemporal features + OLS/kNN (base), ridge/lasso/elastic-net (glmnet), random forest (ranger), SVR (e1071), XGBoost Chen and Guestrin (2016), MLP (nnet); LSTM/Transformer et al. probed via dl_capabilities()."
+  },
+  {
+    "objectID": "methods.html#selection",
+    "href": "methods.html#selection",
+    "title": "Method catalog",
+    "section": "Selection",
+    "text": "Selection\nRolling-origin backtest, 13 metrics, configurable primary metric, near-tie detection, residual diagnostics, AIC/AICc/BIC. See Hyndman and Athanasopoulos (2021) for background."
+  }
+]
