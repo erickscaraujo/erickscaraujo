@@ -154,6 +154,20 @@ a{color:inherit}
 .sw-card__title .ic{width:28px;height:28px;border-radius:8px;background:#F3F4F0;border:1px solid var(--line);display:inline-grid;place-items:center;font-size:0.9rem;font-style:normal}
 .sw-card--featured .sw-card__title{font-size:1.12rem}
 .sw-card__desc{font-size:0.89rem;color:#2B2F28;line-height:1.55}
+.proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(max-width:760px){.proj-grid{grid-template-columns:1fr}}
+.proj-list{border:1px solid var(--line);border-radius:12px;background:white;overflow:hidden}
+.proj-list summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;padding:11px 14px;font-size:0.86rem;font-weight:600;color:#1F2420;background:#F9FAF7;transition:.15s;user-select:none}
+.proj-list summary::-webkit-details-marker{display:none}
+.proj-list summary::after{content:"+";font-family:'JetBrains Mono',monospace;margin-left:auto;color:var(--muted);font-weight:500;font-size:0.95rem}
+.proj-list[open] summary::after{content:"−"}
+.proj-list summary:hover{background:#F3F4F0}
+.proj-list summary .n{font-family:'JetBrains Mono',monospace;font-size:0.68rem;letter-spacing:0.06em;color:var(--muted);background:white;border:1px solid var(--line);padding:2px 8px;border-radius:999px}
+.proj-list ul{list-style:none;padding:8px 10px 10px;display:grid;gap:6px;border-top:1px solid var(--line)}
+.proj-list li{font-size:0.82rem;color:#2B2F28;line-height:1.45;padding:7px 9px;border-radius:8px;background:#FBFDF8;border:1px solid var(--line)}
+.proj-list li code{display:block;font-family:'JetBrains Mono',monospace;font-size:0.73rem;font-weight:500;color:var(--accent-ink);margin-bottom:2px}
+.proj-list li i.rlang{font-style:normal;font-family:'JetBrains Mono',monospace;font-size:0.60rem;letter-spacing:0.06em;color:var(--success);background:#F0FDF4;border:1px solid #C6EBCF;border-radius:6px;padding:0 4px;margin-left:6px}
+.sw-note{font-size:0.84rem;color:var(--muted);margin:12px 0 10px}
 .donate-card{display:grid;grid-template-columns:180px 1fr;gap:18px;align-items:center;margin-top:6px}
 @media(max-width:600px){.donate-card{grid-template-columns:1fr;text-align:center;justify-items:center}}
 .donate-qr img{width:180px;height:180px;border-radius:12px;border:1px solid var(--line);background:white;display:block}
@@ -180,7 +194,7 @@ a{color:inherit}
 footer{max-width:var(--w);margin:16px auto 30px;padding:0 28px;color:var(--muted);font-size:0.82rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--ink)}
-@media print{.topbar,.hero__actions,.profile__links,.rule{display:none}body{background:white}.paper,.section{box-shadow:none;border-color:#E5E7EB}}
+@media print{.topbar,.hero__actions,.profile__links,.rule{display:none}body{background:white}.paper,.section{box-shadow:none;border-color:#E5E7EB}.reveal{opacity:1 !important;transform:none !important}}
 .reveal{opacity:0;transform:translateY(8px);transition:opacity .45s ease, transform .45s ease}
 .reveal.visible{opacity:1;transform:none}
 .tsforge-embed{margin-top:12px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:white}
@@ -206,6 +220,7 @@ footer a:hover{color:var(--ink)}
       <a href="#formacao">Formação</a>
       <a href="#competencias">Competências</a>
       <a href="#software">Software</a>
+      <a href="#portfolios">Portfólios</a>
       <a href="#eventos">Eventos</a>
     </nav>
     <div class="topbar__actions">
@@ -369,8 +384,8 @@ footer a:hover{color:var(--ink)}
     <div class="section__aside">
       <div class="eyebrow">05 — Software & Portfólio</div>
       <h2>Apps freeware para a comunidade</h2>
-      <p>19 repositórios no GitHub + pacote R <b>tsforge</b>: suítes de ferramentas, laboratórios de dados & IA, utilitários, jogos educativos e forecasting em R — muitos 100% offline.</p>
-      <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap"><a class="btn btn--ghost" href="https://github.com/erickscaraujo" target="_blank" rel="noopener">github.com/erickscaraujo ↗</a></div>
+      <p>27 repositórios no GitHub + pacote R <b>tsforge</b>: suítes de ferramentas, laboratórios de dados & IA, utilitários, jogos educativos, forecasting em R e <b>coleções & portfólios</b> com projetos ponta a ponta — muitos 100% offline.</p>
+      <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap"><a class="btn btn--ghost" href="https://github.com/erickscaraujo" target="_blank" rel="noopener">github.com/erickscaraujo ↗</a><a class="btn btn--ghost" href="https://github.com/erickscaraujo?tab=repositories" target="_blank" rel="noopener">Todos os 27 repositórios ↗</a></div>
     </div>
     <div style="display:grid;gap:18px">
 
@@ -403,6 +418,7 @@ footer a:hover{color:var(--ink)}
             <p class="sw-card__desc">Suíte com <b>298 ferramentas em 17 categorias</b> para análise de dados — 100% local e offline, no seu Windows.</p>
             <div style="margin-top:auto;display:flex;gap:8px;flex-wrap:wrap;align-items:center"><span class="mini">⭐ Destaque</span><a class="btn btn--dark" style="margin-left:auto" href="https://github.com/erickscaraujo/Data-Apps" target="_blank" rel="noopener">Abrir no GitHub ↗</a></div>
           </article>
+          <article class="sw-card"><div class="sw-card__head"><span class="sw-card__title"><span class="ic">🎙</span>J.A.R.V.I.S. Brasil</span><span class="chip">Python • Voz</span></div><p class="sw-card__desc">IA de voz em <b>tempo real</b> que ouve, vê, entende e <b>controla seu computador</b> — fala, visão e automação de desktop juntas.</p></article>
           <article class="sw-card"><div class="sw-card__head"><span class="sw-card__title"><span class="ic">📊</span>AnalisAI</span><span class="chip">Electron</span></div><p class="sw-card__desc">Aplicativo desktop de <b>análise de dados com IA local</b> para Windows.</p></article>
           <article class="sw-card"><div class="sw-card__head"><span class="sw-card__title"><span class="ic">📚</span>AcademIA</span><span class="chip">Python • React</span></div><p class="sw-card__desc">IA local para estudo acadêmico: <b>RAG sobre livros inteiros</b> (PDF/EPUB/DOCX) — concorre com o NotebookLM.</p></article>
           <article class="sw-card"><div class="sw-card__head"><span class="sw-card__title"><span class="ic">🎯</span>Coach de Carreira</span><span class="chip">Python • React</span></div><p class="sw-card__desc">Assistente de carreira com IA <b>100% local</b> — currículo e conversas nunca saem da sua máquina.</p></article>
@@ -425,6 +441,25 @@ footer a:hover{color:var(--ink)}
           <article class="sw-card"><div class="sw-card__head"><span class="sw-card__title"><span class="ic">🐧</span>WSL Manager</span><span class="chip">Electron • TS • SQLite</span></div><p class="sw-card__desc">GUI moderna e profissional para gerenciamento avançado do <b>Windows Subsystem for Linux</b>.</p></article>
           <article class="sw-card"><div class="sw-card__head"><span class="sw-card__title"><span class="ic">🔐</span>OxideOTP</span><span class="chip">Rust</span></div><p class="sw-card__desc"><b>One-Time Pad (OTP)</b> em Rust — a única criptografia comprovadamente irrompível, quando usada corretamente.</p></article>
           <article class="sw-card"><div class="sw-card__head"><span class="sw-card__title"><span class="ic">🔤</span>Unicode Text Pro</span><span class="chip">Conversor</span></div><p class="sw-card__desc">Conversor de <b>texto Unicode estilizado</b> para redes sociais e linha de comando.</p></article>
+          <article class="sw-card"><div class="sw-card__head"><span class="sw-card__title"><span class="ic">📦</span>Gestor de Pacotes Python</span><span class="chip">Python • GUI</span></div><p class="sw-card__desc">Gerenciador gráfico de pacotes Python voltado à <b>governança de ativos</b> e uso corporativo.</p></article>
+          <article class="sw-card"><div class="sw-card__head"><span class="sw-card__title"><span class="ic">🧩</span>Rotina para Neurodivergentes</span><span class="chip">Multiplataforma</span></div><p class="sw-card__desc">Organização pessoal, tarefas e rotina com foco em <b>redução de carga cognitiva</b>.</p></article>
+        </div>
+      </div>
+
+      <div>
+        <div class="sw-cat">BI, Econometria & Decisão</div>
+        <div class="sw-grid">
+          <article class="sw-card"><div class="sw-card__head"><span class="sw-card__title"><span class="ic">🩺</span>PBI Doctor</span><span class="chip">Rust • TMDL/DAX</span></div><p class="sw-card__desc"><b>Linter e analisador</b> para modelos semânticos do Power BI (TMDL/DAX) — saúde e boas práticas do seu modelo.</p></article>
+          <article class="sw-card"><div class="sw-card__head"><span class="sw-card__title"><span class="ic">📈</span>Econometric Studio</span><span class="chip">Rust • Python/R</span></div><p class="sw-card__desc">Desktop com <b>engine Python/R e 15+ modelos econométricos</b> em interface gráfica.</p></article>
+          <article class="sw-card"><div class="sw-card__head"><span class="sw-card__title"><span class="ic">🧠</span>FuzzySWOT Strategy Prioritizer</span><span class="chip">Rust • Desktop</span></div><p class="sw-card__desc">Priorização estratégica com <b>lógica fuzzy e matriz TOWS</b>.</p></article>
+        </div>
+      </div>
+
+      <div>
+        <div class="sw-cat">Infra & Performance</div>
+        <div class="sw-grid">
+          <article class="sw-card"><div class="sw-card__head"><span class="sw-card__title"><span class="ic">⚙</span>R Native Runtime</span><span class="chip">Rust • Runtime</span></div><p class="sw-card__desc"><b>Runtime desktop nativo para aplicações R</b> — execute apps R sem depender do ecossistema tradicional.</p></article>
+          <article class="sw-card"><div class="sw-card__head"><span class="sw-card__title"><span class="ic">🗜</span>zpaq-ng</span><span class="chip">C++ • Compressão</span></div><p class="sw-card__desc"><b>Motor de compressão de próxima geração</b> em C++ moderno.</p></article>
         </div>
       </div>
 
@@ -439,10 +474,198 @@ footer a:hover{color:var(--ink)}
       </div>
 
       <div>
-        <div class="sw-cat">Coleções & Portfólio</div>
+        <div class="sw-cat">📦 Coleções — bibliotecas com todos os projetos listados</div>
+        <p class="sw-note">Repositórios que reúnem dezenas a centenas de projetos prontos para rodar, organizados por área. Abra cada área para ver <b>todos os projetos disponíveis</b>.</p>
         <div class="sw-grid">
-          <article class="sw-card"><div class="sw-card__head"><span class="sw-card__title"><span class="ic">🗂</span>Portfolio Dados &amp; IA</span><span class="chip">Python • R</span></div><p class="sw-card__desc">Coleção de <b>127 projetos completos e executáveis</b> em Dados &amp; IA.</p></article>
-          <article class="sw-card"><div class="sw-card__head"><span class="sw-card__title"><span class="ic">🧭</span>Portfolio Ponta a Ponta</span><span class="chip">Python</span></div><p class="sw-card__desc">Do dado ao deploy: análise, BI, DS, ML, IA, <b>Governança de Dados e LGPD</b>.</p></article>
+          <article class="sw-card sw-card--featured">
+            <div class="sw-card__head"><span class="sw-card__title"><span class="ic">🗂</span>Portfolio Dados &amp; IA — 127 projetos executáveis</span><span class="chip">Python 111 • R 16</span></div>
+            <p class="sw-card__desc">Coleção com <b>127 projetos completos</b> em 8 áreas: cada um gera os próprios dados sintéticos, roda de ponta a ponta e entrega <b>relatórios, gráficos, modelos, APIs e data warehouse</b> reais — tudo lintado com Ruff (Python) e lintr (R). Cada pasta tem README com objetivo, stack e execução.</p>
+            <details class="proj-list">
+              <summary><span class="n">16</span> Análise de Dados <b>·</b> EDA, KPIs e relatórios por setor</summary>
+              <ul>
+                <li><code>analise_vendas_varejo</code>Limpeza, agregações, margem, crescimento MoM e relatório executivo</li>
+                <li><code>exploracao_rh_analytics</code>EDA de turnover, faixas salariais e correlações</li>
+                <li><code>analise_financeira_pessoal</code>Fluxo de caixa, taxa de poupança e orçamento por categoria</li>
+                <li><code>analise_logistica_entregas</code>OTD por transportadora, atrasos e custo por kg</li>
+                <li><code>analise_saude_hospitalar</code>Permanência, reinternação em 30d e P90 de espera</li>
+                <li><code>analise_energia_consumo</code>Curva de carga horária e tarifa branca × convencional</li>
+                <li><code>analise_app_engajamento</code>DAU/WAU, stickiness e retenção D1/D7/D30 por cohort</li>
+                <li><code>analise_nps_experiencia</code>NPS com drivers: região e tempo de atendimento</li>
+                <li><code>analise_academica_desempenho</code>Notas, frequência e fatores de aprovação por matéria</li>
+                <li><code>analise_trafego_site</code>Sessões por fonte, bounce rate e CPA do canal pago</li>
+                <li><code>analise_restaurante_cardapio</code>Menu engineering: estrelas/cavalos/puzzles/cães</li>
+                <li><code>analise_seguros_sinistros</code>Loss ratio, frequência × severidade e aging de abertos</li>
+                <li><code>analise_biblioteca_emprestimos</code>Sazonalidade mensal, gêneros e taxa de atraso<i class="rlang">R</i></li>
+                <li><code>analise_clima_chuvas</code>Chuva mensal, veranico e amplitude térmica<i class="rlang">R</i></li>
+                <li><code>analise_academia_musculacao</code>Volume semanal, progressão de carga e PRs<i class="rlang">R</i></li>
+                <li><code>analise_voos_atrasos</code>Pontualidade &lt;15min, cauda dos atrasos e cancelamentos<i class="rlang">R</i></li>
+              </ul>
+            </details>
+            <details class="proj-list">
+              <summary><span class="n">16</span> Analista de BI <b>·</b> Dashboards, DRE, scorecards e painéis</summary>
+              <ul>
+                <li><code>dashboard_kpi_vendas</code>KPIs vs meta e dashboard HTML sem dependências extras</li>
+                <li><code>relatorio_executivo_mensal</code>Automação de relatório Excel formatado (openpyxl)</li>
+                <li><code>relatorio_cohort_retencao</code>Matriz de cohort M0..M11 com heatmap HTML</li>
+                <li><code>indicadores_estoque_giro</code>Giro, cobertura, curva ABC e risco de ruptura</li>
+                <li><code>funil_conversao_vendas</code>Funil e-commerce por etapa/dispositivo com HTML visual</li>
+                <li><code>scorecard_fornecedores</code>Nota ponderada 0–100 com classes A/B/C</li>
+                <li><code>ranking_vendedores_quota</code>Leaderboard com streak de quota e política de prêmios</li>
+                <li><code>dre_margens_mensal</code>DRE simplificada: margens bruta/EBITDA e YoY</li>
+                <li><code>painel_sac_atendimentos</code>SLA de resposta, FCR, CSAT e backlog semanal</li>
+                <li><code>carteira_produtos_bcg</code>Matriz BCG com quadrantes e bolhas de receita</li>
+                <li><code>dashboard_marketing_campanhas</code>CTR/CPC/CPA, ROAS vs meta e pacing do orçamento</li>
+                <li><code>concentracao_receita_gini</code>Curva de Lorenz, Gini e HHI com alerta de dependência</li>
+                <li><code>painel_ocupacao_hotel</code>Ocupação, ADR, RevPAR e cancelamento por canal<i class="rlang">R</i></li>
+                <li><code>relatorio_frotas_veiculos</code>Custo/km, consumo e utilização com alertas<i class="rlang">R</i></li>
+                <li><code>painel_projetos_portfolio</code>Semáforo de risco por consumo × conclusão × prazo<i class="rlang">R</i></li>
+                <li><code>geracao_solar_performance</code>Performance ratio e queda em dias nublados<i class="rlang">R</i></li>
+              </ul>
+            </details>
+            <details class="proj-list">
+              <summary><span class="n">16</span> Ciência de Dados <b>·</b> Estatística, inferência e séries temporais</summary>
+              <ul>
+                <li><code>teste_ab_ecommerce</code>Teste z para proporções, IC, poder estatístico e MDE</li>
+                <li><code>previsao_demanda</code>Séries temporais, features de calendário/lags e baselines vs ML</li>
+                <li><code>teste_hipoteses_marketing</code>Shapiro, Levene, ANOVA, Tukey HSD e Cohen's d</li>
+                <li><code>analise_cesta_compras</code>Regras de associação (suporte/confiança/lift) do zero</li>
+                <li><code>teste_mann_whitney_salarial</code>Mann-Whitney U, rank-biserial e bootstrap de medianas</li>
+                <li><code>clusterizacao_series_temporais</code>Clusters por padrão: tendência, sazonalidade e estabilidade</li>
+                <li><code>calculo_amostra_pesquisa</code>n mínimo, correção de população finita e IC simulado</li>
+                <li><code>simulacao_monte_carlo_projecao</code>10k cenários de receita, fan chart P5/P95 e prob. de meta</li>
+                <li><code>teste_qui_quadrado_associacao</code>Contingência, chi² e Cramér's V</li>
+                <li><code>validacao_cruzada_comparada</code>Vazamento temporal: shuffle vs TimeSeriesSplit (+37% de erro)</li>
+                <li><code>odds_ratio_interpretacao</code>Odds ratios, efeito marginal e cenários comparados</li>
+                <li><code>decomposicao_sazonal_serie</code>Tendência + índice sazonal mensal + resíduo, sem statsmodels</li>
+                <li><code>regressao_multipla_diagnostico</code>lm() completo: summary, ANOVA aninhada e 4 diagnósticos<i class="rlang">R</i></li>
+                <li><code>teste_t_pareado_treinamento</code>Shapiro → t pareado/Wilcoxon, Cohen's d e bootstrap<i class="rlang">R</i></li>
+                <li><code>anova_dois_fatores_interacao</code>aov() com interação, interaction.plot e Tukey HSD<i class="rlang">R</i></li>
+                <li><code>regressao_polinomial_overfitting</code>RMSE treino/teste por grau; mínimo no grau ótimo<i class="rlang">R</i></li>
+              </ul>
+            </details>
+            <details class="proj-list">
+              <summary><span class="n">16</span> Machine Learning <b>·</b> Classificação, regressão e avaliação de modelos</summary>
+              <ul>
+                <li><code>previsao_churn_telecom</code>Pipeline completo, validação cruzada, métricas e modelo salvo</li>
+                <li><code>segmentacao_clientes_rfm</code>K-Means, cotovelo, silhueta, PCA e personas de marketing</li>
+                <li><code>regressao_preco_imoveis</code>Regressão interpretável vs HistGradientBoosting</li>
+                <li><code>deteccao_anomalias_transacoes</code>IQR vs IsolationForest com hora cíclica e anti-fraude</li>
+                <li><code>modelo_uplift_marketing</code>T-learner, uplift por decil e curva de ganho</li>
+                <li><code>classificador_tickets_suporte</code>Roteamento multiclasse com termos decisivos por fila</li>
+                <li><code>elasticidade_preco_demanda</code>Regressão log-log, interpretação econômica e preço ótimo</li>
+                <li><code>calibracao_probabilidades</code>Platt × isotônico, Brier e reliability diagram</li>
+                <li><code>propensao_cross_sell</code>Ranking priorizado com Precision@10% e lift 2×</li>
+                <li><code>classes_desbalanceadas_estrategias</code>Baseline × weight × oversampling × threshold por PR-AUC</li>
+                <li><code>importancia_features_comparada</code>Nativa × permutação × drop-column e o dilema da feature gêmea</li>
+                <li><code>curvas_aprendizado_diagnostico</code>Overfit × underfit diagnosticados pelas curvas treino/val</li>
+                <li><code>knn_classificador_vinhos</code>k-NN do zero, padronização sem vazamento, escolha do k<i class="rlang">R</i></li>
+                <li><code>naive_bayes_spam_palavras</code>Multinomial NB com Laplace em log-espaço<i class="rlang">R</i></li>
+                <li><code>threshold_otimo_custo_negocio</code>FN custa 10× FP: threshold ótimo pela matriz de custo<i class="rlang">R</i></li>
+                <li><code>pca_eigen_reducao_dimensional</code>eigen() da covariância, scree plot e reconstrução<i class="rlang">R</i></li>
+              </ul>
+            </details>
+            <details class="proj-list">
+              <summary><span class="n">16</span> Inteligência Artificial <b>·</b> NLP, busca, recomendação e algoritmos</summary>
+              <ul>
+                <li><code>chatbot_intencoes</code>NLU com TF-IDF + regressão logística e fallback por confiança</li>
+                <li><code>analise_sentimento_avaliacoes</code>Abordagem léxica vs modelo supervisionado comparadas</li>
+                <li><code>busca_semantica_documentos</code>Motor de busca FAQ com TF-IDF, cosseno e Hits@2</li>
+                <li><code>recomendador_colaborativo</code>Item-item cosseno, predições ponderadas, RMSE e Hit@5</li>
+                <li><code>nl2sql_consulta_vendas</code>Perguntas em PT → SQL → SQLite, rule-based com fallback honesto</li>
+                <li><code>deduplicacao_fuzzy_registros</code>SequenceMatcher + blocking + union-find para cadastros</li>
+                <li><code>sumarizacao_extrativa_textrank</code>Grafo de sentenças + PageRank do zero, sem LLM</li>
+                <li><code>corretor_ortografico_probabilistico</code>Edição 1–2 com prior de frequência (estilo Norvig)</li>
+                <li><code>rag_respostas_citadas</code>Mini-RAG: recuperação + resposta extrativa com citação da fonte</li>
+                <li><code>gerador_nomes_markov</code>Cadeia de Markov ordem-3 com temperatura controlada</li>
+                <li><code>dialogo_slots_reserva</code>State tracking: slots, correções no meio do turno e confirmação</li>
+                <li><code>plagio_minhash_jaccard</code>Shingles + MinHash 64 perms; erro ~0.005 na cópia detectada</li>
+                <li><code>algoritmo_genetico_horarios</code>Escala de turnos: elitismo, torneio, mutação, convergência<i class="rlang">R</i></li>
+                <li><code>busca_caminho_a_estrela</code>A* com Manhattan em grade 20×20, caminho ótimo (38 passos)<i class="rlang">R</i></li>
+                <li><code>perceptron_do_zero</code>Perceptron do zero: aprende AND/OR e trava no XOR — a origem do MLP<i class="rlang">R</i></li>
+                <li><code>bfs_grafo_social</code>BFS em grafo social: graus de separação, alcance de 2 saltos e caminho mínimo<i class="rlang">R</i></li>
+              </ul>
+            </details>
+            <details class="proj-list">
+              <summary><span class="n">15</span> Engenharia de Dados <b>·</b> ETL, lakehouse e performance</summary>
+              <ul>
+                <li><code>pipeline_etl_vendas</code>Extração CSV/JSON, transformação, carga em SQLite, logs e CLI</li>
+                <li><code>orquestrador_batch</code>Mini-orquestrador com DAG topológico, retries e status</li>
+                <li><code>ingestao_incremental_api</code>Watermark persistido, paginação por cursor e idempotência</li>
+                <li><code>dimensao_scd2</code>SCD Tipo 2 com point-in-time e checagem de integridade</li>
+                <li><code>backfill_incremental_janelas</code>Backfill diário com checkpoint e retomada após falha</li>
+                <li><code>lakehouse_medallion_bronze_silver_gold</code>Bronze/silver/gold sobre arquivos com manifest por camada</li>
+                <li><code>otimizacao_indices_sqlite</code>EXPLAIN QUERY PLAN antes/depois, até 158× mais rápido</li>
+                <li><code>migracoes_banco_versionadas</code>Runner idempotente com rollback da última versão</li>
+                <li><code>conciliacao_bancaria_auto</code>Extrato × ledger com janela de datas e tarifas isoladas</li>
+                <li><code>fila_prioridade_jobs</code>heapq com aging: anti-starvation demonstrado em números</li>
+                <li><code>particionamento_poda_arquivos</code>Partition pruning: 66% dos arquivos ignorados, 11× mais rápido</li>
+                <li><code>cliente_api_backoff_respeitoso</code>Token bucket + backoff+jitter: 7,5× mais sucessos que o ingênuo</li>
+                <li><code>consolidacao_multifilial_padronizacao</code>3 filiais → padrão único com stopifnot como gate<i class="rlang">R</i></li>
+                <li><code>particionador_arquivos_mes</code>Write-side: split mensal + manifest + verificação<i class="rlang">R</i></li>
+                <li><code>padronizador_enderecos_entrega</code>Normalização de logradouros/CEP e chave de dedup<i class="rlang">R</i></li>
+              </ul>
+            </details>
+            <details class="proj-list">
+              <summary><span class="n">16</span> Engenharia de IA/ML <b>·</b> MLOps, serving, drift e FinOps</summary>
+              <ul>
+                <li><code>api_modelo_credito</code>Treino versionado + API FastAPI de inferência com validação</li>
+                <li><code>monitoramento_drift_modelo</code>PSI, teste KS e alertas de retreino por semana</li>
+                <li><code>treino_experimentos_registry</code>Grid search com registro append-only de runs (mini-MLflow)</li>
+                <li><code>inferencia_batch_score</code>Scoring chunked com guardrail PSI contra o baseline de treino</li>
+                <li><code>canary_deploy_modelo</code>Champion × challenger com roteamento 90/10 e promoção por evidência</li>
+                <li><code>feature_store_simples</code>Uma função alimenta treino e serving, com store SQLite + cache TTL</li>
+                <li><code>gateway_batching_rate_limit</code>Token bucket + micro-batching: −65% de chamadas ao modelo</li>
+                <li><code>suite_testes_qualidade_modelo</code>Portões AUC/fairness/monotonicidade com exit code para CI</li>
+                <li><code>experimentacao_sequencial_guardrails</code>Peeking infla falsos positivos 3×; guardrail de latência aborta</li>
+                <li><code>model_card_responsavel</code>Model card gerado no treino com métricas por grupo</li>
+                <li><code>drift_multivariado_classificador</code>Domínio-classificador: AUC 0.50→0.98 conforme drift cresce</li>
+                <li><code>custo_inferencia_finops</code>Run-rate por endpoint, estouro projetado e otimizações</li>
+                <li><code>capacidade_fila_inferencia</code>M/M/1 simulado vs Erlang; réplicas para o SLO p95<i class="rlang">R</i></li>
+                <li><code>versionamento_dataset_snapshot</code>Hash por registro, diff v1→v2 e manifest<i class="rlang">R</i></li>
+                <li><code>explicacoes_predicoes_contribuicoes</code>Top drivers por predição anexados ao log de auditoria<i class="rlang">R</i></li>
+                <li><code>slo_orcamento_erros_disponibilidade</code>Error budget 99,9% com burn rate acumulado<i class="rlang">R</i></li>
+              </ul>
+            </details>
+            <details class="proj-list">
+              <summary><span class="n">16</span> Governança de Dados <b>·</b> Qualidade, LGPD, linhagem e auditoria</summary>
+              <ul>
+                <li><code>framework_qualidade_dados</code>Motor de regras: completude, unicidade, validade, consistência</li>
+                <li><code>catalogo_linhagem_dados</code>Catálogo técnico com estatísticas e grafo de linhagem/impacto</li>
+                <li><code>mascara_dados_sensiveis</code>PII por regex + hash/máscara parcial com auditoria (LGPD)</li>
+                <li><code>validador_contrato_schema</code>Data contracts com severidades e gate de deploy</li>
+                <li><code>dicionario_dados_automatico</code>Dicionário Markdown com PII detectada e glossário da equipe</li>
+                <li><code>monitor_sla_dados</code>Freshness vs SLA, falhas consecutivas e escalação on-call</li>
+                <li><code>auditoria_acessos_dados</code>Menor privilégio, contas dormentes e conflitos de SoD</li>
+                <li><code>politica_classificacao_dados</code>4 níveis de sensibilidade com tratamento por coluna</li>
+                <li><code>descoberta_perfilagem_fontes</code>Scanner de pastas: perfil, PK candidatas e FKs prováveis</li>
+                <li><code>gestao_consentimento_uso</code>Consentimentos por finalidade, expiração e opt-out propagado</li>
+                <li><code>linhagem_nivel_coluna</code>Impacto/origem com granularidade de coluna + PII check</li>
+                <li><code>trilha_auditoria_hash_chain</code>Log append-only encadeado por SHA-256 com detector de fraude</li>
+                <li><code>relatorio_retencao_dados</code>Prazos por categoria, fila de descarte e agenda trimestral<i class="rlang">R</i></li>
+                <li><code>monitor_mudancas_esquema_diff</code>Diff v1→v2 com rename detection e gate bloqueado<i class="rlang">R</i></li>
+                <li><code>qualidade_tipos_conversao_segura</code>Conversores defensivos com auditoria de falhas<i class="rlang">R</i></li>
+                <li><code>reconciliacao_bases_divergentes</code>CRM × ERP campo a campo com tolerância de 1%<i class="rlang">R</i></li>
+              </ul>
+            </details>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px"><span class="mini">⭐ Destaque</span><span class="mini">127 projetos • 8 áreas • Python + R</span><a class="btn btn--dark" style="margin-left:auto" href="https://github.com/erickscaraujo/Portfolio-Dados-e-IA" target="_blank" rel="noopener">Abrir no GitHub ↗</a></div>
+          </article>
+        </div>
+      </div>
+
+      <div id="portfolios">
+        <div class="sw-cat">🧭 Portfólios — projetos ponta a ponta com dashboards</div>
+        <p class="sw-note">Menos projetos, mais profundidade: <b>pipelines reais sobre dados reais</b>, arquitetura Medallion, governança LGPD e dashboards Streamlit por estágio.</p>
+        <div class="sw-grid">
+          <article class="sw-card sw-card--featured">
+            <div class="sw-card__head"><span class="sw-card__title"><span class="ic">🛒</span>Portfolio Ponta a Ponta — Olist</span><span class="chip">Python • DuckDB • Streamlit</span></div>
+            <p class="sw-card__desc">Pipeline completo sobre <b>99.441 pedidos reais</b> do e-commerce brasileiro (Kaggle), com arquitetura Medallion e governança LGPD em <b>6 estágios</b>: EDA (profiling e qualidade), Business Analytics (KPIs, RFM, Cohort, funil, LTV), Ciência de Dados (hipóteses com χ² e feature engineering), Machine Learning (was_late e is_low_rating com CV e SHAP), IA Generativa (insights LLM + RAG sobre o Gold) e Governança LGPD (Microsoft Presidio em 31 tabelas, dicionário de 210 colunas, lineage Mermaid, catálogo e políticas). DW estrela em DuckDB e dashboard Streamlit de 6 páginas, com 12 testes automatizados.</p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px"><span class="mini">⭐ Destaque</span><span class="mini">6 estágios • dashboard 6 páginas • 12 testes</span><a class="btn btn--dark" style="margin-left:auto" href="https://github.com/erickscaraujo/Portfolio_ponta-a-ponta" target="_blank" rel="noopener">Abrir no GitHub ↗</a></div>
+          </article>
+          <article class="sw-card sw-card--featured">
+            <div class="sw-card__head"><span class="sw-card__title"><span class="ic">🏢</span>Portfolio Ponta a Ponta — CNPJ Data Platform</span><span class="chip">Python • DuckDB • Parquet</span></div>
+            <p class="sw-card__desc">Plataforma analítica do <b>Cadastro Nacional da Pessoa Jurídica (RFB)</b>: ~180M registros em 13 tabelas → Medallion RAW→Gold com Parquet + DuckDB (<b>14,7 GB</b>). Star Schema com dim_empresa (43,6M), dim_estabelecimento (43,1M), dim_sócio (28,1M), fatos e 14 views analíticas (KPIs, UF, CNAE, evolução, HHI). Módulos de Governança (lineage, catálogo, glossário), Qualidade, Privacidade (masking de CPF/CNPJ/email), Data Contracts (13 JSON), Data Science, ML (is_ativo) e IA/NLP (RAG). Dashboards Streamlit de 5 páginas + HTML estáticos, com 29 testes.</p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px"><span class="mini">43,6M empresas • 180M registros • 14,7 GB DW</span><a class="btn btn--dark" style="margin-left:auto" href="https://github.com/erickscaraujo/Portfolio_ponta-a-ponta" target="_blank" rel="noopener">Abrir no GitHub ↗</a></div>
+          </article>
         </div>
       </div>
 
@@ -509,7 +732,7 @@ footer a:hover{color:var(--ink)}
 
 <script>
 document.getElementById('year').textContent=new Date().getFullYear();
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:0.12});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:0,rootMargin:'0px 0px -6% 0px'});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 const btn=document.getElementById('menuBtn');
 const nav=document.getElementById('nav');
@@ -519,7 +742,7 @@ btn&&btn.addEventListener('click',()=>{
   if(!open){nav.style.position='absolute';nav.style.top='58px';nav.style.left='12px';nav.style.right='12px';nav.style.flexDirection='column';nav.style.background='white';nav.style.border='1px solid #E7E9E3';nav.style.borderRadius='12px';nav.style.padding='8px';nav.style.boxShadow='0 8px 24px rgba(0,0,0,0.08)'}
 });
 document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>{if(window.innerWidth<=860)nav.style.display='none'}));
-const ids=['sobre','experiencia','formacao','competencias','software','eventos'];
+const ids=['sobre','experiencia','formacao','competencias','software','portfolios','eventos'];
 const links=[...document.querySelectorAll('.nav a')];
 window.addEventListener('scroll',()=>{
   let cur='';
